@@ -403,6 +403,28 @@ ingress:
     <div id="msg40" class="copied-message">Copied!</div>
   </div>
 
+    <div class="command-box">
+    <div class="command-number">41. Pull latest Git changes</div>
+    <span id="cmd41" class="command">git pull origin main</span>
+    <button class="copy-btn" onclick="copyCommand('cmd41')">Copy</button>
+    <div id="msg41" class="copied-message">Copied!</div>
+  </div>
+
+    <div class="command-box">
+    <div class="command-number">42. Restart Gunicorn</div>
+    <span id="cmd42" class="command">sudo systemctl restart gunicorn</span>
+    <button class="copy-btn" onclick="copyCommand('cmd42')">Copy</button>
+    <div id="msg42" class="copied-message">Copied!</div>
+  </div>
+
+  <div class="command-box">
+    <div class="command-number">43. Reload Nginx</div>
+    <span id="cmd43" class="command">sudo systemctl reload nginx</span>
+    <button class="copy-btn" onclick="copyCommand('cmd43')">Copy</button>
+    <div id="msg43" class="copied-message">Copied!</div>
+  </div>
+
+
   <script>
     function copyCommand(id) {
       const text = document.getElementById(id).textContent;
